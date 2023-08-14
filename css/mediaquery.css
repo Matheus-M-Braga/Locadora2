@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+/* mobile */
+@media screen and (max-width: 700px){
+   /* <=== Navbar ===> */
+   .sidebar.active{
+      width: 100%;
+      z-index: 12;
+   }
+   .sidebar.active .adm-btn{
+      text-align: center;
+   }
+   .sidebar.active img{
+      opacity: 0;
+   }
+
+   /* header */
+   .logo_altis img {
+      width: 170%;
+      height: 57px;
+      object-fit: cover;
+   }
+
+   /* conteudo central */
+   .wrapper{
+      grid-template-columns: auto;
+   }
+   .mais-alug{
+      flex-direction: column;
+      row-gap: 10px;
+   }
+   .blocos{
+      width: 100%;
+      align-items: center;
+   }
+   #atrasados, #adicionados{
+      margin-bottom: 35px;
+   }
+   .titulos{
+      padding: 5px;
+   }
+   
+  
+   #modal_devol .modal {
+      width: 65%;
+   }
+
+   /* <=== Tabelas ===> */
+
+   /* header */
+   .search_box{
+      width: 100%;
+   }
+   .filter-icon{
+      left: -0.8%;
+   }
+   .filter{
+      padding: 5px;
+   }
+   .new{
+      padding: 9px;
+      font-size: 12px;
+   }
+
+   /* responsiva */
+   thead{
+      display: none;
+   }
+   tbody td.conteudo{
+      position: relative;
+      font-size: 14px;
+      padding: 8px;
+      display: block;
+      text-align: right;
+      box-shadow:  0px 2px 1px 0px #00000040;
+   }
+   tbody td.conteudo.acoes{
+      display: flex;
+      border-radius: 5px;
+      align-items: center;
+      justify-content: flex-end;
+   }
+   tbody td.conteudo::before{
+      content: attr(data-title);
+      position: absolute;
+      left: 0;
+      display: block;
+      text-indent: 10px;
+      font-weight: 600;
+   }
+   tbody tr{
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: block;
+      width: 100%;
+      box-shadow:  0px 0px 9px 0px #00000040;
+   }
+   .band1, .band2, .band3{
+      display: inline-block;
+   }
+   /* <=== Modals ===> */
+
+   /* modal add */
+   .modal{
+      width: 80%;
+      padding: 20px;
+   }
+   .title-modal{
+      font-size: 23px;
+   }
+   .input-area{
+      width: 102%;
+   }
+   .input-area .label{
+      font-size: 14px;
+      width: 41%;
+      padding: 3px;
+   }
+   #buttons{
+      width: 102%;
+      justify-content: center;
+      padding: 0;
+   }
+   #buttons .submit, #buttons .reset{
+      width: 30%;
+   }
+   /* modal exclu */
+   #modal_exclu .modal{
+      width: 70%;
+      padding: 10px;
+   }
+
+   /* <=== Específicas ===> */
+
+   /* edits */
+   .modal-edit .input-group{
+      flex-direction: column;
+      margin-bottom: 60px;
+   }
+   .modal-edit .input-group .input-area, .modal-edit .input-group .input-area input{
+      width: 100%;
+   }
+
+   /* alugs */
+   .modal-alug .input-group .input-area label {
+      width: 50%;
+   }
+   .modal-alug .input-group {
+      display: contents;
+      flex-direction: column;
+   } 
+}
+
+/* tablet */
+@media screen and (min-width: 701px) and (max-width: 1145px){
+   /* <=== Navbar ===> */
+   .sidebar.active{
+      width: 250px;
+      z-index: 12;
+   }
+   .sidebar.active .adm-btn{
+      text-align: center;
+   }
+   .sidebar.active img{
+      opacity: 1;
+   }
+   
+   /* header */
+   .logo_altis img {
+      width: 140%;
+      height: 70px;
+      object-fit: cover;
+   }
+
+   /* conteudo central */
+   .wrapper{
+      grid-template-columns: auto;
+   }
+   .mais-alug{
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 10px;
+   }
+   .blocos{
+      width: 48%;
+      align-items: center;
+   }
+   #atrasados, #adicionados{
+      
+      margin-bottom: 35px;
+   }
+   table{
+      width: 100%;
+   }
+   .titulos{
+      padding: 5px;
+   }
+
+   /* responsiva */
+   thead{
+      display: none;
+   }
+   tbody td.conteudo{
+      position: relative;
+      padding: 8px;
+      display: block;
+      text-align: right;
+      box-shadow:  0px 2px 1px 0px #00000040;
+   }
+   tbody td.conteudo.acoes{
+      display: flex;
+      border-radius: 5px;
+      align-items: center;
+      justify-content: flex-end;
+   }
+   tbody td.conteudo::before{
+      content: attr(data-title);
+      position: absolute;
+      left: 0;
+      display: block;
+      text-indent: 10px;
+      font-weight: 600;
+   }
+   tbody tr{
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: block;
+      width: 100%;
+      box-shadow:  0px 0px 9px 0px #00000040;
+   }
+   .band1, .band2, .band3{
+      display: inline-block;
+   }
+   #modal_devol .modal {
+      width: 65%;
+   }
+
+   /* <=== Tabelas ===> */
+
+   /* header */
+   .search_box{
+      width: 100%;
+   }
+   #filter{
+      margin-right: 3vw;
+   }
+   .filter-icon{
+      left: -0.8%;
+   }
+   .filter{
+      padding: 5px;
+   }
+   .new{
+      padding: 9px;
+      font-size: 12px;
+   }
+
+   /* <=== Modals ===> */
+
+   /* modal add */
+   .modal{
+      width: 80%;
+      padding: 20px;
+   }
+   .title-modal{
+      font-size: 23px;
+   }
+   .input-area{
+      width: 102%;
+   }
+   .input-area .label{
+      font-size: 14px;
+      width: 41%;
+      padding: 10px;
+   }
+   #buttons{
+      width: 102%;
+      justify-content: center;
+      padding: 0;
+   }
+   #buttons .submit, #buttons .reset{
+      width: 30%;
+   }
+   /* modal exclu */
+   #modal_exclu .modal{
+      width: 50%;
+      padding: 10px;
+   }
+}
